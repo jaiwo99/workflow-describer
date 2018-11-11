@@ -9,6 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.util.Arrays;
 import java.util.List;
 
 @Slf4j
@@ -25,6 +26,7 @@ public class WorkflowDescriberApplication {
     @Bean
     CommandLineRunner commandLineRunner(List<Command> commandList, Database database, ScreenPrinter printer) {
         return args -> {
+            log.info("Running application with args: {}", Arrays.asList(args));
             try {
                 database.init();
                 for (Command command : commandList) {
