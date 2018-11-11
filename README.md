@@ -10,7 +10,12 @@
 
 ### Build Project
 ```bash
-./gradlew clean build && java -jar build/lib/*.jar help 
+./gradlew clean build 
+```
+
+### Run Project
+```bash
+java -jar build/lib/*.jar help
 ```
 
 ## Usage
@@ -48,3 +53,7 @@
 #######################################################################################
 
 ```
+
+## Debugging
+
+Application log can be found in `app.log`
