@@ -1,0 +1,20 @@
+CONTRACTORS
+start
+  contractorName : con24
+  fullName       : Conny Contractor
+  email          : conny.contractor@example.com
+end
+start
+  contractorName : con99
+  fullName       : Erica External
+  email          : erica.external@example.com
+end
+start
+  contractorName : con07
+  fullName       : Françoise Consultant
+  email          : f.consultant@example.org
+end
+start
+  contractorName : invalid
+  email          : f.consultant@example.org
+end
